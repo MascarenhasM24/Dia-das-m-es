@@ -1,0 +1,101 @@
+/* Configuração Geral */
+* {
+    box-sizing: border-box; /* Garante que o preenchimento não quebre a largura */
+}
+
+/* Ajuste para telas pequenas (Celulares) */
+@media (max-width: 600px) {
+    h1 { font-size: 1.5rem; }
+    .container-homenagem {
+        width: 95%;
+        padding: 15px;
+    }
+    img {
+        width: 100%; /* A imagem ocupa a largura do celular */
+        height: auto;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #fff5f7 0%, #fce4ec 100%);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo da Imagem */
+img {
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    margin: 20px 0;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.02);
+}
+
+/* Container do Formulário */
+.container-homenagem {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.05);
+    max-width: 500px;
+    width: 90%;
+}
+
+/* Títulos */
+h1 { color: #d81b60; font-size: 2rem; }
+h2 { color: #ad1457; font-weight: 400; }
+
+/* Campo de Nome */
+input {
+    width: 80%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #f8bbd0;
+    border-radius: 25px;
+    outline: none;
+    font-size: 1rem;
+}
+
+input:focus {
+    border-color: #d81b60;
+}
+
+/* Botão Estilizado */
+button {
+    background-color: #d81b60;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #ad1457;
+}
+
+/* Onde a Poesia aparece */
+#resultadoPoesia {
+    line-height: 1.6;
+    font-family: 'Georgia', serif;
+    font-size: 1.1rem;
+    background: #fffafa;
+    padding: 20px;
+    border-left: 4px solid #d81b60;
+    margin-top: 25px;
+}
