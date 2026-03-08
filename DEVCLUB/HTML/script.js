@@ -1,8 +1,7 @@
 async function gerarPoesia() {
     const nome = document.getElementById('nomeUsuario').value;
     const resultado = document.getElementById('resultadoPoesia');
-    const apiKey = "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";
-
+    const apiKey = "s
     if (!nome) {
         alert("Por favor, digite um nome!");
         return;
@@ -52,4 +51,5 @@ async function gerarPoesia() {
         resultado.innerText = "Ops! O poeta se perdeu nos versos. Tente novamente.";
         console.error("Erro na API:", error);
     }
+
 }
